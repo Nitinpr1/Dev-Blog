@@ -12,7 +12,7 @@ const Create = () => {
     e.preventDefault();
     const blog = { title, body, author };
     setIsPending(true);
-    fetch("https://dev-blog-nw0qduwjj-nitinpr1.vercel.app/blogs", {
+    fetch("https://dev-blog-nw0qduwjj-nitinpr1.vercel.app/db.json/blogs", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

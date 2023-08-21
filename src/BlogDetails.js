@@ -13,7 +13,7 @@ const BlogDetails = () => {
   const history = useHistory();
 
   const handleClick = () => {
-    fetch("https://dev-blog-nw0qduwjj-nitinpr1.vercel.app/blogs" + id, {
+    fetch("https://dev-blog-nw0qduwjj-nitinpr1.vercel.app/db.json/blogs" + id, {
       method: "DELETE",
     }).then(() => {
       history.push("/");
